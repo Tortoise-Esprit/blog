@@ -2,42 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="top-page" content="personal-weblog">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Esprit" />
+    <link rel="manifest" href="site.webmanifest"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo-container">
-            <a href="index.html">
-                <img src="./images/logo238.png" alt="My Blog Logo" class="logo">
+            <a href="./index.html">
+            <img src="./images/logo238.png" alt="My Blog Logo" class="logo">
             </a>
         </div>
         <h1 class="jimbunshicho">About Me</h1>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./about.html">About Me</a></li>
+                <a href="./index-ja.html">
+                    <i class="fas fa-globe lang-icon"></i>
+                </a>
+                
             </ul>
         </nav>
     </header>
-    
     <main>
+        <header class="header">
+        <h1 class="catchphrase">Explore my post and gallery.</h1>
+        </header>
+
         <section class="description">
-            <h2>Hello, I'm [Your Name]!</h2>
-            <p>Welcome to my personal blog. I am a psychiatrist with nearly a decade of experience, deeply interested in humanities, philosophy, and psychopathology.</p>
-            <p>Besides my profession, I love cooking, especially Chinese cuisine. Experimenting with different flavors and ingredients is one of my passions.</p>
-            <p>This blog is a space where I share my thoughts on various topics, from professional insights to personal hobbies. I hope you find something interesting here!</p>
-        </section>
+            <p class="introduction">
+                <p>Welcome to my blog. Here you can find my thoughts, ideas, and experiences.</p> 
+                <p>This blog explores topics in the humanities, history, philosophy, and psychopathology, while also delving into matters entirely unrelated.</p>
+                <p>I hope you enjoy reading them.</p>
+            </p>
     </main>
     
     <footer>
         <ul>
             <li><a href="https://bsky.app/profile/officegoro.bsky.social">Bluesky</a></li>
+            <i class="fa-brands fa-bluesky"></i>
         </ul>
-        <p>Copyright &copy; 2025 Tortoise-Esprit</p>
+        <p>Copyright © 2025 Tortoise-Esprit</p>
     </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>This website uses cookies to enhance your experience. By continuing, you agree to our use of cookies.</p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
