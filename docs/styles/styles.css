@@ -1,1 +1,137 @@
-s
+@charset "UTF-8";
+/* styles.css */
+
+/* Header */
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'EVA-Matisse';
+    src: url('EVA-Matisse_Classic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: light;
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 10px;
+    border-bottom: 2px solid #777777;
+}
+body 
+{
+    background-color: #eeeeee;
+    
+    font-family: 
+        'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 
+        'Hiragino Mincho ProN', 'Hiragino Sans', Meiryo, 
+        'Noto Sans JP', 'Noto Sans Arabic', Tahoma, Arial, 
+        sans-serif;
+}
+
+/* 特定のクラスにフォントを適用 */
+.catchphrase {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'EVA-Matisse_Classic', 'ヒラギノ明朝 ProN';
+    text-align: center;
+    font-size: 3em; /* 必要に応じてサイズを調整 */
+    font-style: italic;
+
+}
+
+/* 特定のクラスにフォントを適用 */
+.jimbunshicho {
+    font-family: 'EVA-Matisse_Classic', sans-serif; /* sans-serifはフォールバック用 */
+    font-size: 2em; /* 必要に応じてサイズを調整 */
+    color: #333333;    /* 必要に応じて色も指定 */
+}
+
+/* Logo */
+.logo-container {
+    margin: -50px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* ナビ項目間のスペース */
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #007bff;
+}
+@media (max-width: 768px) {
+    .description {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1em;
+    }
+}
+
+.lang-icon {
+    font-size: 24px; /* アイコンのサイズ */
+    color: #333; /* アイコンの色 */
+    transition: color 0.3s ease;
+}
+
+.lang-icon:hover {
+    color: #007bff; /* ホバー時に色を青に変更 */
+}
+
+.description {  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em; /*小さい画面では少しフォントを小さく*/
+    font-style: normal;
+    text-align: center;
+    max-width: 800px; /* 最大幅を800pxに調整 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 0 20px; /* 余白を入れて読みやすくする */
+}
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    margin: 0;
+}
+
+.cookie-banner button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cookie-banner button:hover {
+    background-color: #0056b3;
+}
