@@ -84,6 +84,7 @@ body
     }
 }
 .quote{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', san serif;
     font-size: 24px;
     font-style: italic;
     text-align: right;
