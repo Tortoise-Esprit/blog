@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         const options = {
-            duration: 4000,
+            duration: 1000,
             easing: 'ease',
             fill: 'forwards' // アニメーション終了後の状態を維持
         };
