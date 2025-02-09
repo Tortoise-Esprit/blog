@@ -1,16 +1,18 @@
-//テキストを浮かび上がらせるアニメーション
-//catchphrase に適用
-const catchphrase= document.querySelector('#catchephrase');
+document.addEventListener("DOMContentLoaded", () => {
+    const catchphrase = document.querySelector('.catchphrase');
 
-const keyframes = {
-    opacity: [0, 1],
-    transform: ['scale(0)', 'scale(1)'],
-    translate: ['0, 50px', 0],
-};
-const options = {
-    duration: 4000,
-    easing: 'ease',
-}
+    if (catchphrase) {
+        const keyframes = {
+            opacity: [0, 1],
+            transform: ['translateY(50px) scale(0)', 'translateY(0) scale(1)'],
+        };
 
-catchphrase.animate(keyframes, options);
-<script src="https://kit.fontawesome.com/aae9bb6c7e.js" crossorigin="anonymous"></script>
+        const options = {
+            duration: 4000,
+            easing: 'ease',
+            fill: 'forwards' // アニメーション終了後の状態を維持
+        };
+
+        catchphrase.animate(keyframes, options);
+    }
+});
