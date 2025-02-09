@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (catchphrase) {
         const keyframes = {
             opacity: [0, 1],
-            transform: ['translateY(50px) scale(0)', 'translateY(0) scale(1)'],
+            transform: ['translateY(10px) scale(0)', 'translateY(0) scale(1)'],
         };
 
         const options = {
