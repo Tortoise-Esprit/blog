@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (catchphrase) {
         const keyframes = {
             opacity: [0, 1],
-            Position: ['100% 0'. '0, 0'],
         };
 
         const options = {
